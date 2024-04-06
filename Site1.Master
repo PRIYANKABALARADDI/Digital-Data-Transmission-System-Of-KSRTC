@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="KSRTC.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 15%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="auto-style1">
+                <tr style="background-color: #333300">
+                    <td class="auto-style2">
+                        <asp:Image ID="Image1" runat="server" Height="142px" ImageUrl="~/KSRTC logo.jpg" Width="169px" />
+                    </td>
+                    <td style="background-color: #333300; color: #FFFFFF; font-size: 28px;">KARNATAKA&nbsp; STATE&nbsp; ROAD&nbsp; TRANSPORT&nbsp; CORPORATION&nbsp;(KSRTC)<br />
+                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" NavigateUrl="~/HOME.aspx">HOME</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="White" NavigateUrl="~/ABOUT1.aspx">ABOUT</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="White" NavigateUrl="~/Login1.aspx">LOGIN</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink7" runat="server" ForeColor="White" NavigateUrl="~/ContactUs1.aspx">CONTACT US</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+
+        </div>
+    </form>
+</body>
+</html>
